@@ -1,0 +1,25 @@
+Task #1 + Errors we've encountered:
+
+We were unable to run the first .py file. To remedy this, we were required to install several modules, including...
+- pip3 install numpy
+
+Next, we noticed the file was still not running. Upon debugging, we noticed that the line:
+from . import assoc_utils_np as assoc_utils
+
+Is incorrect, and needs to be replaced with: 
+import assoc_utils_np as assoc_utils
+
+Now that we run that, we still encounter this error:
+on % /usr/local/bin/python3 /Users/chris/VectorHaSH/ICSI445-AI-Neu
+roscience-Final-Presentation/src/assoc_utils_np_2D.py
+Traceback (most recent call last):
+  File "/Users/chris/VectorHaSH/ICSI445-AI-Neuroscience-Final-Presentation/src/assoc_utils_np_2D.py", line 5, in <module>
+    import assoc_utils_np as assoc_utils
+  File "/Users/chris/VectorHaSH/ICSI445-AI-Neuroscience-Final-Presentation/src/assoc_utils_np.py", line 9, in <module>
+    from src.assoc_utils_np_2D import module_wise_NN_2d
+ModuleNotFoundError: No module named 'src'
+chris@dyn-169-226-250-225 ICSI445-AI-Neuroscience-Final-Presentation % 
+
+We are not sure how to fix it, and we cannot progress from here until we do.
+
+

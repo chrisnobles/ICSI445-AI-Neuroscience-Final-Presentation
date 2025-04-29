@@ -2,7 +2,7 @@
 All functions are for 2D environments
 """
 import numpy as np
-from . import assoc_utils_np as assoc_utils
+import assoc_utils_np as assoc_utils
 
 # --- grid cells
 def gen_gbook_2d(lambdas, Ng, Npos):
